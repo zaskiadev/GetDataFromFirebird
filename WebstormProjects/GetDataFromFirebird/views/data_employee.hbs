@@ -43,17 +43,17 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {{#each dataDB}}
+                                    {{#each resultData}}
 
                                     <tr>
-                                        <td>{{dataDB.EMP_NO}}</td>
-                                        <td>{{dataDB.FULL_NAME}}</td>
-                                        <td>{{dataDB.PHONE_EXT}}</td>
-                                        <td>{{dataDB.HIRE_DATE}}</td>
-                                        <td>{{dataDB.SALARY}}</td>
+                                        <td>{{EMP_NO}}</td>
+                                        <td>{{FULL_NAME}}</td>
+                                        <td>{{PHONE_EXT}}</td>
+                                        <td>{{HIRE_DATE}}</td>
+                                        <td>{{SALARY}}</td>
                                         <td>
-                                            <a href="/updatehijo/{{dataDB.EMP_NO}}" class="btn btn-primary">EDIT</a>
-                                            <a href="/deletehijo/{{dataDB.EMP_NO}}" class="btn btn-danger">DELETE</a>
+                                            <a href="/edit_employee/{{EMP_NO}}" class="btn btn-primary">EDIT</a>
+                                            <a href="/delete_employee/{{EMP_NO}}" class="btn btn-danger">DELETE</a>
                                         </td>
                                     </tr>
                                     {{/each}}
