@@ -1,0 +1,74 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Employee</li>
+                        <li class="breadcrumb-item active">Data Employee</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-13">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Data Task</h3>
+                        </div>
+                        <!-- /.card-header -->
+
+                        <form action method="post">
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Employee Number</th>
+                                        <th>Full Name</th>
+                                        <th>Phone Ext</th>
+                                        <th>Hire Date</th>
+                                        <th>Salary</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {{#each dataDB}}
+
+                                    <tr>
+                                        <td>{{dataDB.EMP_NO}}</td>
+                                        <td>{{dataDB.FULL_NAME}}</td>
+                                        <td>{{dataDB.PHONE_EXT}}</td>
+                                        <td>{{dataDB.HIRE_DATE}}</td>
+                                        <td>{{dataDB.SALARY}}</td>
+                                        <td>
+                                            <a href="/updatehijo/{{dataDB.EMP_NO}}" class="btn btn-primary">EDIT</a>
+                                            <a href="/deletehijo/{{dataDB.EMP_NO}}" class="btn btn-danger">DELETE</a>
+                                        </td>
+                                    </tr>
+                                    {{/each}}
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </form>
+                        <!-- /.card-body -->
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>

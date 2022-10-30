@@ -1,0 +1,21 @@
+{
+  "name": "getdatafromfirebird",
+  "version": "1.0.0",
+  "description": "",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "getdatafromfirebird"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "firebird": "^0.1.5",
+    "node-firebird": "^1.0.0"
+  }
+}
